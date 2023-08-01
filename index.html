@@ -1,0 +1,368 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');</style>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#C778DD',
+            secondary: '#75DEFF',
+            gray: '#ABB2BF',
+            background: '#2d313b',
+            white: '#FFFFFF',
+          },
+          fontFamily: {
+             'FiraCode': ['Fira Code']
+          },
+          height: {
+            '100': '25rem',
+            '105': '26rem',
+            '110': '27rem',
+            '115': '28rem',
+            '120': '29rem',
+            '128': '32rem',
+          },
+          width: {
+            '100': '25rem',
+            '105': '26rem',
+            '110': '27rem',
+            '115': '28rem',
+            '120': '29rem',
+            '125': '30.5rem',
+            '128': '32rem',
+          },
+        }
+      }
+    }
+  </script>
+
+</head>
+
+<body class="bg-background">
+  <div class="w-auto h-20 flex justify-between bg-background sticky top-0 z-10">
+    <div class="flex items-center pl-0 w-0 invisible lg:visible lg:w-auto lg:pl-8 group">
+      <a class="flex" href="index.html">
+        <img src="Logo.svg" alt="logo" class="h-5 pr-2">
+        <h3 class="text-white font-FiraCode font-bold group-hover:text-gray">Awgust</h3>
+      </a>
+    </div>
+
+    <div class="flex justify-between px-4 w-full lg:pr8 lg:w-96 lg:text-1xl">
+      <button class="font-FiraCode font-medium flex items-center scroll group" target="heroSection">
+        <h4 class="text-primary">#</h4>
+        <h4 class="text-white group-hover:text-gray">home</h4>
+      </button>
+
+      <button class="font-FiraCode font-medium flex items-center scroll group" target="projectsSection">
+        <h4 class="text-primary">#</h4>
+        <h4 class="text-white group-hover:text-gray">works</h4>
+      </button>
+
+      <button class="font-FiraCode font-medium flex items-center scroll group" target="aboutMeSection">
+        <h4 class="text-primary">#</h4>
+        <h4 class="text-white group-hover:text-gray">about-me</h4>
+      </button>
+
+      <button class="font-FiraCode font-medium flex items-center scroll group" target="contactsSection">
+        <h4 class="text-primary">#</h4>
+        <h4 class="text-white group-hover:text-gray">contacts</h4>
+      </button>
+    </div>
+  </div>
+
+  <!-- collumn start -->
+
+  <div class="mx-auto w-fit 2xl:w-2xl">
+
+      <!-- hero section -->
+
+    <div class="h-fit w-3/4 mx-auto mt-24 lg:mb-36 flex" id="heroSection">
+      <div class="w-fit h-full">
+        <div class="h-fit w-full flex text-primary font-FiraCode font-semibold text-3xl lg:text-4xl  drop-shadow-lg">
+          <h1 class="text-white h-min w-auto">Awgust is <span class="text-secondary">available</span>
+          for your <span class="text-primary">projects </span>on Roblox</h1>
+        </div>
+  
+        <h3 class=" pt-10 text-gray font-FiraCode text-1xl"><b>Currently, I live in Poland. My time zone is GMT+2.</b></h3>
+
+        <h3 class="pt-2 pb-6 text-white font-FiraCode text-1xl">Need something scripted?</h3>
+  
+        <button class="px-4 py-1 border border-primary scroll hover:bg-fuchsia-950" target="contactsSection">
+          <h2 class="text-white font-FiraCode text-1xl">Contact me!!</h2>
+        </button>
+
+      </div>
+  
+      <div class="w-0 lg:w-1/2 h-38 relative">
+        <img src="LogoOutline.svg" alt="logo" class="w-1/3 h-1/2 ml-24 absolute invisible lg:visible">
+        <img src="Dots.svg" alt="logo" class="w-1/6 h-1/3 lg:top-2/3 lg:left-3/4 absolute invisible lg:visible">
+      </div>
+    </div>
+  
+    <!-- phrase section -->
+
+    <div class="h-40 h-0 w-0 lg:w-fit lg:w-fit my-0 lg:mb-48 lg:my-14 mx-auto flex justify-center relative invisible lg:visible">
+      <div class="w-fit border border-gray flex justify-center items-center">
+        <div class="p-10 flex items-start">
+          <img src="Marks.svg" alt="marks" class="pr-4">
+          <h2 class="my-auto pr-4 text-white font-FiraCode font-medium lg:text-2xl s:text-1xl">With great power comes great electricity bill</h2>
+          <div class="my-auto  p-4 m-4 border border-gray relative">
+            <h2 class="h-fit text-white font-FiraCode font-medium text-2xl ">- Dr.   who</h2>
+            <div class="h-12 w-12 absolute -bottom-6 -right-6 bg-background flex justify-center items-center">
+              <img src="Marks.svg" alt="marks">
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <img src="Dots.svg" alt="logo" class="w-1/6 h-2/4 lg:-bottom-2/3 lg:-left-1/4 absolute invisible lg:visible">
+      <img src="Rectangle.svg" alt="logo" class="w-1/6 h-2/4 lg:-bottom-4 lg:-right-1/4 absolute invisible lg:visible">
+    </div>
+      
+    <!-- projects section -->
+
+    <div class="h-fit w-3/4 mx-auto relative"> 
+      <div class="w-full h-1/6 my-5 flex items-center font-medium font-FiraCode" id="projectsSection">
+        <h4 class="text-primary text-3xl">#</h4>
+        <h4 class="text-white text-3xl">projects</h4>
+        <div class="w-1/2 h-1px mx-3 border-b border-primary"></div>
+        <div class="w-full flex justify-end">
+          <button class="group">
+            <a href="projects.html"><h4 class="text-white text-1xl group-hover:text-gray">View all ~~&gt;</h4></a>
+          </button>
+        </div>
+      </div>
+      
+      <img src="Rectangle.svg" alt="Rectangle" class="absolute -z-10 invisible lg:visible lg:top-12 lg:left-3">
+      <img src="Rectangle.svg" alt="Rectangle" class="h-40 absolute lg:-right-44 lg:top-52 invisible lg:visible">
+
+      <div class="mx-auto w-11/12 h-5/6 mt-10 flex flex-wrap">
+        
+        <div class="h-fit w-80 mb-10 border border-gray mx-auto">
+          
+          <img class="border border-gray" src="avaragepetsimThumbnail.jpg" alt="image">
+
+          <div class="w-full font-FiraCode">
+
+            <h1 class="border-b border-gray p-3 text-3xl text-white font-medium">Avarage Pet Simulator</h1>
+
+            <h3 class="p-3 text-1xl text-gray">A remake of the original Pet Simulator. Made using <a class="underline text-secondary" href="https://sleitnick.github.io/Knit/">Knit</a>.</h3>
+
+            <button class="m-3 px-3 py-1 border border-primary hover:bg-fuchsia-950">
+              <a class="text-white font-FiraCode text-1xl" href="https://www.roblox.com/games/13336660849/Average-Pet-Simulator">Link &lt;~&gt;</a>
+            </button>
+
+          </div>
+        </div>
+
+        <div class="h-fit w-80 mb-10 border border-gray mx-auto">
+          
+          <img class="border border-gray" src="magicpacmaniaThumbail.jpg" alt="image">
+
+          <div class="w-full font-FiraCode">
+
+            <h1 class="border-b border-gray p-3 text-3xl text-white font-medium">Magic Pac Mania</h1>
+
+            <h3 class="p-3 text-1xl text-gray"> <b class="text-amber-500">2nd place</b> winner for a week-long Game jam  <i>"Retro Game Jam"</i> hosted on the <a class="underline text-emerald-300" href="https://discord.com/invite/hd">HiddenDevs Discord server</a></h3>
+
+            <button class="m-3 px-3 py-1 border border-primary hover:bg-fuchsia-950">
+              <a class="text-white font-FiraCode text-1xl" href="https://www.roblox.com/games/13126952641/Magic-Pac-Mania">Link &lt;~&gt;</a>
+            </button>
+
+          </div>
+        </div>
+
+        <div class="h-fit w-80 mb-10 border border-gray mx-auto">
+          
+          <img class="border border-gray" src="windyfarmsThumbnail.jpg" alt="image">
+
+          <div class="w-full font-FiraCode">
+
+            <h1 class="border-b border-gray p-3 text-3xl text-white font-medium">Windy Farms</h1>
+
+            <h3 class="p-3 text-1xl text-gray">A farming adventure set amidst a sky archipelago, where you try to maximize your revenues using your strategic thinking. Made using <a class="underline text-secondary" href="https://sleitnick.github.io/Knit/">Knit</a>.</h3>
+
+            <button class="m-3 px-3 py-1 border border-primary hover:bg-fuchsia-950">
+              <a class="text-white font-FiraCode text-1xl" href="https://www.roblox.com/games/14072478847/Windy-Farms">Link &lt;~&gt;</a>
+            </button>
+
+          </div>
+        </div>
+        
+      </div>      
+    </div>
+  
+    <!-- skills section -->
+      
+    <div class="h-fit lg:h-128 w-3/4 mx-auto mt-24"> 
+      <div class="w-full h-1/6 flex items-center font-medium font-FiraCode" id="skillsSection">
+        <h4 class="text-primary text-3xl">#</h4>
+        <h4 class="text-white text-3xl">skills</h4>
+        <div class="w-4/12 h-1px mx-3 border-b border-primary"></div>
+      </div>
+  
+      <div class="mx-auto h-5/6 pt-10 flex">
+        <div class="w-0 invisible relative lg:w-5/12 lg:visible">
+          <img src="Rectangle.svg" alt="Rectangle" class="h-24 absolute lg:-top-10 lg:right-20 invisible lg:visible">
+          <img src="Dots.svg" alt="Rectangle" class="absolute invisible lg:visible">
+          <img src="Dots.svg" alt="Rectangle" class="absolute lg:top-1/3 lg:right-36 invisible lg:visible">
+          <img src="Rectangle.svg" alt="Rectangle" class="h-16 absolute lg:top-2/4 lg:right-5 invisible lg:visible">
+
+          <img src="LogoOutline.svg" alt="Rectangle" class="h-36 absolute lg:top-2/4 lg:left-5 invisible lg:visible">
+        </div>
+        
+        <div class="w-7/12 lg:ml-20 mx-auto">
+
+          <div class="flex flex-wrap">
+
+            <div class="w-28 h-fit mb-5 mx-auto border border-gray font-FiraCode">
+              <div class="border-b border-gray">
+                <h3 class="border-b border-gray p-2 text-1xl text-white font-semibold">Languages</h3>
+              </div>
+              <div class="text-1xl text-gray flex flex-wrap">
+                <h3 class="p-2">Luau</h3>
+                <h3 class="p-2">C++</h3>
+                <h3 class="p-2">Python</h3>
+                <h3 class="p-2">Javascript</h3>
+              </div>
+            </div>
+
+            <div class="w-52 h-fit mb-5 mx-auto border border-gray font-FiraCode">
+              <div class="border-b border-gray">
+                <h3 class="border-b border-gray p-2 text-1xl text-white font-semibold">Tools</h3>
+              </div>
+              <div class="text-1xl text-gray flex flex-wrap">
+                <h3 class="p-2">Paint.Net</h3>
+                <h3 class="p-2">VsCode</h3>
+                <h3 class="p-2">Premiere Pro</h3>
+                <h3 class="p-2">Photoshop</h3>
+                <h3 class="p-2">Aseprite</h3>
+                <h3 class="p-2">Roblox Studio</h3>
+              </div>
+            </div>
+
+            <div class="w-44 h-fit mb-5 mx-auto border border-gray font-FiraCode">
+              <div class="border-b border-gray">
+                <h3 class="border-b border-gray p-2 text-1xl text-white font-semibold">Frameworks</h3>
+              </div>
+              <div class="text-1xl text-gray flex flex-wrap">
+                <h3 class="p-2">Knit</h3>
+                <h3 class="p-2">Profile Service</h3>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>      
+    </div>
+
+    <!-- about-me section -->
+  
+    <div class="h-fit w-3/4 mx-auto mt-24"> 
+      <div class="w-full h-1/6 flex items-center font-medium font-FiraCode" id="aboutMeSection">
+        <h4 class="text-primary text-3xl">#</h4>
+        <h4 class="text-white text-3xl">about-me</h4>
+        <div class="w-2/12 lg:w-6/12 h-1px mx-3 border-b border-primary"></div>
+      </div>
+  
+      <div class="w-11/12 mx-auto h-5/6 pt-5 flex">
+        <div class="w-fit relative">
+          <h3 class="h-fit font-FiraCode text-gray">
+            Hello, i&#8217m Awgust! <br><br>
+
+            I&#8217m a self-taught developer from Kyiv, Ukraine. I am capable of developing whole games from scratch, that i hope, will out-do your expectations. And I am looking forward to working with you! <br><br>
+
+            Transforming my creativity and knowledge into functioning projects has been my passion for over a year. I always strive to learn about the newest technologies and frameworks.
+          </h3>
+        </div>
+        
+        <div class="w-0 lg:w-5/12 lg:ml-40 relative invisible lg:visible">
+
+          <img src="Dots.svg" alt="Rectangle" class="absolute lg:top-5 invisible lg:visible">
+          <img src="Dots.svg" alt="Rectangle" class="h-13 absolute lg:top-1/3 lg:-right-40 invisible lg:visible">
+          <img src="Logo.svg" alt="Rectangle" class="h-36 absolute lg:top-2/4 lg:left-32 -z-10 invisible lg:visible">
+
+        </div>
+      </div>      
+    </div>
+
+      <!-- contacts section -->
+  
+      <div class="h-fit w-3/4 mx-auto mt-24"> 
+        <div class="w-full h-1/6 flex items-center font-medium font-FiraCode" id="contactsSection">
+          <h4 class="text-primary text-3xl">#</h4>
+          <h4 class="text-white text-3xl">contacts</h4>
+          <div class="w-2/12 h-1px mx-3 border-b border-primary"></div>
+        </div>
+    
+        <div class="w-11/12 lg:mx-auto h-fit pt-10 flex">
+          <div class=" relative invisible w-0 lg:w-6/12 lg:visible">
+            <h3 class="h-fit font-FiraCode text-gray">
+              I&#8217m interested in freelance opportunities. However, if you have other request or question, don&#8217t hesitate to contact me
+            </h3>
+          </div>
+          
+          <div class="w-5/12 relative">
+
+            <div class="w-72 h-fit border border-gray font-FiraCode lg:ml-64">
+              <div class="flex">
+                <h3 class="p-4 pb-0 text-1xl text-white font-semibold">Message me here</h3>
+              </div>
+              <div class="text-1xl text-gray flex flex-wrap m-4">
+                <div class="flex">
+                  <img src="DiscordLogo.svg" alt="Discord">
+                  <h3 class="p-2 pt-0">kill4d</h3>
+                </div>
+
+                <div class="flex">
+                  <img src="EmailLogo.svg" alt="Email">
+                  <h3 class="p-2">kill3d.real@gmail.com</h3>
+                </div>
+              </div>
+            </div>
+
+            <img src="LogoOutline.svg" alt="Rectangle" class="h-36 absolute top-60 left-20 -z-10 visible lg:invisible">
+
+          </div>
+
+        </div>      
+      </div>
+
+  </div>
+
+  <!-- collumn end -->
+
+  <div class="pt-24">
+    <div class="w-11/12 h-32 mx-auto border-t border-gray flex justify-between bg-background bottom-0 z-10">
+      <div class="h-full w-full ml-5 mt-10">
+        <div class="flex items-center w-auto h-auto">
+          <img src="Logo.svg" alt="logo" class="h-5 pr-2">
+          <h3 class="text-white font-FiraCode font-bold">Awgust</h3>
+        </div>
+
+        <h3 class="w-fit pt-3 px-1 text-gray font-FiraCode font-regular">Full-stack Roblox game developer</h3>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script>
+  $(".scroll").click(function() {
+    $('html, body').animate({
+        scrollTop: $('#' + $(this).attr('target')).offset().top - 90
+    }, 200);
+});
+</script>
+
+</html>
