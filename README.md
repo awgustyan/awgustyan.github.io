@@ -1,3 +1,3 @@
-# [kill3d4.github.io](https://kill3d4.github.io/)
+# [awgustyan.github.io](https://awgustyan.github.io/)
 
 This is my portfolio. Take a look around!
